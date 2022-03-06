@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		491638B927D49AE2009C8FED /* toy_drummer.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 491638B827D49AE2009C8FED /* toy_drummer.usdz */; };
 		49FE745727D387D600AA4682 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FE745627D387D600AA4682 /* AppDelegate.swift */; };
 		49FE745927D387D600AA4682 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FE745827D387D600AA4682 /* ContentView.swift */; };
 		49FE745B27D387D600AA4682 /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 49FE745A27D387D600AA4682 /* Experience.rcproject */; };
@@ -15,6 +16,8 @@
 		49FE746A27D387DA00AA4682 /* ARDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FE746927D387DA00AA4682 /* ARDemoTests.swift */; };
 		49FE747427D387DA00AA4682 /* ARDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FE747327D387DA00AA4682 /* ARDemoUITests.swift */; };
 		49FE747627D387DA00AA4682 /* ARDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FE747527D387DA00AA4682 /* ARDemoUITestsLaunchTests.swift */; };
+		49FE749127D3C9C300AA4682 /* ARViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FE749027D3C9C300AA4682 /* ARViewModel.swift */; };
+		49FE749927D3D71700AA4682 /* MultipeerSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FE749827D3D71700AA4682 /* MultipeerSession.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		491638B827D49AE2009C8FED /* toy_drummer.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = toy_drummer.usdz; sourceTree = "<group>"; };
 		49FE745327D387D600AA4682 /* ARDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49FE745627D387D600AA4682 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		49FE745827D387D600AA4682 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -46,6 +50,9 @@
 		49FE746F27D387DA00AA4682 /* ARDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ARDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		49FE747327D387DA00AA4682 /* ARDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARDemoUITests.swift; sourceTree = "<group>"; };
 		49FE747527D387DA00AA4682 /* ARDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		49FE749027D3C9C300AA4682 /* ARViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewModel.swift; sourceTree = "<group>"; };
+		49FE749527D3D3E400AA4682 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		49FE749827D3D71700AA4682 /* MultipeerSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipeerSession.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,11 +103,15 @@
 		49FE745527D387D600AA4682 /* ARDemo */ = {
 			isa = PBXGroup;
 			children = (
+				49FE749527D3D3E400AA4682 /* Info.plist */,
+				49FE748227D3888D00AA4682 /* Objects */,
 				49FE745627D387D600AA4682 /* AppDelegate.swift */,
 				49FE745827D387D600AA4682 /* ContentView.swift */,
 				49FE745A27D387D600AA4682 /* Experience.rcproject */,
 				49FE745C27D387DA00AA4682 /* Assets.xcassets */,
 				49FE745E27D387DA00AA4682 /* Preview Content */,
+				49FE749027D3C9C300AA4682 /* ARViewModel.swift */,
+				49FE749827D3D71700AA4682 /* MultipeerSession.swift */,
 			);
 			path = ARDemo;
 			sourceTree = "<group>";
@@ -130,6 +141,14 @@
 			path = ARDemoUITests;
 			sourceTree = "<group>";
 		};
+		49FE748227D3888D00AA4682 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				491638B827D49AE2009C8FED /* toy_drummer.usdz */,
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -146,6 +165,8 @@
 			dependencies = (
 			);
 			name = ARDemo;
+			packageProductDependencies = (
+			);
 			productName = ARDemo;
 			productReference = 49FE745327D387D600AA4682 /* ARDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -218,6 +239,8 @@
 				Base,
 			);
 			mainGroup = 49FE744A27D387D600AA4682;
+			packageReferences = (
+			);
 			productRefGroup = 49FE745427D387D600AA4682 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -236,6 +259,7 @@
 			files = (
 				49FE746027D387DA00AA4682 /* Preview Assets.xcassets in Resources */,
 				49FE745D27D387DA00AA4682 /* Assets.xcassets in Resources */,
+				491638B927D49AE2009C8FED /* toy_drummer.usdz in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,7 +284,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49FE749927D3D71700AA4682 /* MultipeerSession.swift in Sources */,
 				49FE745927D387D600AA4682 /* ContentView.swift in Sources */,
+				49FE749127D3C9C300AA4682 /* ARViewModel.swift in Sources */,
 				49FE745727D387D600AA4682 /* AppDelegate.swift in Sources */,
 				49FE745B27D387D600AA4682 /* Experience.rcproject in Sources */,
 			);
@@ -426,7 +452,9 @@
 				DEVELOPMENT_TEAM = QQS593TJVN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ARDemo/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Need to use local network for multipeer";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
@@ -457,7 +485,9 @@
 				DEVELOPMENT_TEAM = QQS593TJVN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ARDemo/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Need to use local network for multipeer";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
